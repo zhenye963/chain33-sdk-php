@@ -1,0 +1,17 @@
+{
+    "name": "zhenye963/chain33-sdk-php",
+    "description": "chain33 php sdk",
+    "type": "library",
+    "authors": [
+        {
+            "name": "zhenye",
+            "email": "zhenye@nightlan.top"
+        }
+    ],
+    "require": {},
+	"autoload" : {
+		"psr-4" : {
+			"chain33\\phpsdk\\" : "src"
+		}
+	}
+}
