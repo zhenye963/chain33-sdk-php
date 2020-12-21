@@ -1,5 +1,6 @@
 <?php
-
+ini_set("display_errors", "On");//打开错误提示
+ini_set("error_reporting",E_ALL);//显示所有错误
 use chain33\phpsdk\ChainClient;
 
 require_once './autoload.php';
@@ -33,6 +34,9 @@ $client = new ChainClient();
 
 /*****交易结束******/
 
+$res = $client->getPeerInfo();
+print_r($res);
+exit();
 //交易 三步合一步
 $res = $client->transfer('0xb3f28572edbdfc080895f4590a248a2b66841e7f007cb1b80bc49187a3aa62be','1HoPZ68echFJw5NtRTjvRcR1JKuRqrMrZA',10000000,1000000);
 //token交易
